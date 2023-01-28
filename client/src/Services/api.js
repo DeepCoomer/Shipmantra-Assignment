@@ -1,6 +1,6 @@
 import axios from "axios";
 
-let host = "http://localhost:8000"
+let host = process.env.REACT_APP_NODEHOST
 
 export const calculateDistance = async (startcity, endcity) => {
     try {
